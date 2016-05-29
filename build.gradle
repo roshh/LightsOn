@@ -1,0 +1,19 @@
+version = '1.0.0'
+group = 'com.github.roshh'
+
+apply plugin: 'java'
+
+jar.doFirst {
+
+        manifest {
+                attributes      'Implementation-Title': 'Traffic Light Control',
+                                'Implementation-Version': version,
+                                'Implementation-Vendor': 'rsy',
+                                'Main-Class': 'com.github.roshh.LightControl'
+        }
+}
+
+dependencies {
+
+}
+
